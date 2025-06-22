@@ -2,9 +2,16 @@
 these codes include mushroom object, white wdge, edge, bite by bug and get mouldy detection by use yolov8
 
 necessary install library:
-cuda & cudnn install: https://medium.com/@zera.tseng888/%E5%9C%A8windows11%E7%92%B0%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%9Dcuda%E8%88%87cudnn-dd85575187ae
 
-python version:3.12.8
+  cuda & cudnn install: https://medium.com/@zera.tseng888/%E5%9C%A8windows11%E7%92%B0%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%9Dcuda%E8%88%87cudnn-dd85575187ae
+  
+  python version:3.12.8
+  
+  opencv-python      4.11.0.86
+  
+  pytorch
+  
+  yolov8
 
 after finish install use bash to install yolov8 and pytorch:
 
@@ -18,7 +25,7 @@ installation code:
   
     conda install pytorch torchvision torchaudio cpuonly -c pytorch
 
-  install yolov8
+  install pytorch
 
     pip install ultralytics
 
@@ -36,6 +43,8 @@ If all installed use python code to check whether they install successful:
     model = YOLO("yolov8n.pt")  # 載入 YOLOv8 最小模型
     results = model("path/to/your/image.jpg")  # 推論
     results.show()
+
+
 
 
 
