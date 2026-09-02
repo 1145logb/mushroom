@@ -1,0 +1,18 @@
+# Python 虛擬環境（這通常包含幾萬個檔案，一定要排掉！）
+.venv/
+venv/
+env/
+
+# Python 快取檔
+__pycache__/
+*.py[cod]
+
+# PyTorch 權重檔與資料集
+*.pt
+*.pth
+datasets/
+data/
+
+# IDE 設定
+.vscode/
+.idea/
